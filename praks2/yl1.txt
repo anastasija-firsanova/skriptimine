@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#skript väljastab kasutajale tervitust "Tere, kasutajanimi !"
+
+echo -n "Tere, "
+
+kasutajanimi=$(whoami)
+
+echo -n $kasutajanimi
+
+echo "!"
