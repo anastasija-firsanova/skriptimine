@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#see skript väljastab kuupäeva ja ajaga seotud info
+
+kuupaev=$(date +"%A, %B %d, %Y")
+kell=$(date +"Kell on %H:%M")
+kalenderi_tekst=$(date +"%B %Y kalender")
+kalender=$(cal | tail -n 7)
+
+echo "Täna on $kuupaev"
+echo "$kell"
+echo "$kalenderi_tekst"
+echo "$kalender"
