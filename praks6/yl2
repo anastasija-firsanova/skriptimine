@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#kasutaja sisestab suvalise täisarvu ja skript arvutab numbrite summa ning väljastab selle
+
+echo -n "Sisesta suvaline täisarv: "
+read arv
+
+sisend_arv=$arv
+summa=0
+
+while [ $arv -ne 0 ]
+do
+    jaak=$(($arv % 10))
+    summa=$(($summa + $jaak))
+    arv=$(($arv / 10))
+done
+
+echo "Arvu $sisend_arv numbrite summa on $summa"
+
