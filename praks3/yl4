@@ -12,3 +12,9 @@ maha_jaanud=$((reisijad % kohad))
 echo "Täielikult täidetud busse: $taidetud_bussid"
 echo "Maha jäänud inimesi: $maha_jaanud"
 
+if test $maha_jaanud -gt 0
+then
+	taidetud_bussid=$(($taidetud_bussid + 1))
+fi
+
+echo "Kokku on vaja $taidetud_bussid taisbussi"
