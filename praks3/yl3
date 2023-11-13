@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Küsib ainep ja nädalate arvu ning väljastab ajakulu (ümardatud täisarvuni)
+
+read -p "Sisestage ainepunktide arv: " ainepunktid
+read -p "Sisestage nädalate arv: " nadalad
+
+ajakulu=$(($ainepunktid*26))
+
+aeg=`echo "scale=1;$ajakulu/$nadalad" | bc`
+ 
+aeg_ymarda="`echo "($aeg+0.9)/1" | bc`"
+
+echo $aeg_ymarda
