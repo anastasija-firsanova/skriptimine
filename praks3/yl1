@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#küsib kasutaja käest tema täisnime (ees- ja perenimi) ja tervitab
+
+echo -n "Sisesta oma ees- ja perenimi: "
+read nimi
+
+tervitus="Tere tulemast, $nimi!"
+
+echo $tervitus
